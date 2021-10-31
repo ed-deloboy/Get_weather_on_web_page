@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background: #CADBEA;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.select {
+    display: block;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    background: #CADBEA;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.weather-header__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.weather-hero__logo {
+    display: block;
+}
+
+.weather-hero__wrapper {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-hero__data-item {
+    margin-bottom: 15px;
+}
+
+.weather-hero__data-item span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.weather-hero__data-item .cityname {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.weather-hero__data-item .weatheimage {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 0, 0, 0.247);
+}
+
+.weather-hero__data-item .temperaturecity {
+    font-weight: 300;
+    font-size: 80px;
+}
+
+.weather-hero__subdata-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
+}

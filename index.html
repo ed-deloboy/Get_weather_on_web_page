@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+
+
+</head>
+
+<body>
+    <header class="weather-header">
+        <div class="container">
+            <div class="weather-header__wrapper-content">
+                <a class="weather-hero__logo"><span>Погода</span></a>
+                <select id="city" class="cityselect">
+                    <option value="524901">Москва</option>
+                    <option value="501175">Ростов-на-Дону</option>
+                    <option value="491422">Сочи</option>
+                    <option value="5128638">Нью Йорк</option>
+            </select>
+            </div>
+        </div>
+    </header>
+    <section class="weather-hero">
+        <div class="container">
+            <div class="weather-hero__wrapper">
+                <ul class="weather-hero__data-list">
+                    <li class="weather-hero__data-item">
+                        <span class="weekday">
+                            Понедельник
+                        </span>,
+                        <span class="monthday">
+                            15
+                        </span>
+                        <span class="monthname">
+                            ноября
+                        </span>
+                    </li>
+                    <li class="weather-hero__data-item">
+                        <span class="cityname">Москва</span>
+                    </li>
+                    <li class="weather-hero__data-item">
+                        <span class="countryname">Россия</span>
+                    </li>
+                    <li class="weather-hero__data-item">
+                        <span class="weatheimage"></span>
+                    </li>
+                    <li class="weather-hero__data-item">
+                        <span class="temperaturecity">20</span>
+                    </li>
+
+                </ul>
+                <ul class="weather-hero__subdata-list">
+                    <li class="weather-hero__subdata-item">
+                        <span class="windweather">Ветро</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

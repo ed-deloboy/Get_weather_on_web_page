@@ -89,11 +89,6 @@ button {
     margin-bottom: 15px;
 }
 
-.weather-hero__data-item span {
-    font-size: 18px;
-    font-weight: 500;
-}
-
 .weather-hero__data-item .cityname {
     font-size: 28px;
     font-weight: 600;
@@ -119,4 +114,9 @@ button {
     font-weight: 100;
     font-style: italic;
     font-size: 24px;
+}
+
+.weather-hero__data-item {
+    font-size: 24px;
+    font-weight: 300;
 }

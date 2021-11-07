@@ -18,12 +18,14 @@
         <div class="container">
             <div class="weather-header__wrapper-content">
                 <a class="weather-hero__logo"><span>Погода</span></a>
-                <select id="city" class="cityselect">
+                <div class="newselect"></div>
+                <!-- <select id="city" class="cityselect">
                     <option value="524901">Москва</option>
                     <option value="501175">Ростов-на-Дону</option>
                     <option value="491422">Сочи</option>
                     <option value="5128638">Нью Йорк</option>
-            </select>
+                    <option value="496015">Шахты</option>
+            </select> -->
             </div>
         </div>
     </header>
@@ -32,15 +34,10 @@
             <div class="weather-hero__wrapper">
                 <ul class="weather-hero__data-list">
                     <li class="weather-hero__data-item">
-                        <span class="weekday">
-                            Понедельник
-                        </span>,
-                        <span class="monthday">
-                            15
-                        </span>
-                        <span class="monthname">
-                            ноября
-                        </span>
+                        <p class="weather-hero__data-item-time-container">
+                            Сегодня:
+                            <span id="weather-hero__time"></span>
+                        </p>
                     </li>
                     <li class="weather-hero__data-item">
                         <span class="cityname">Москва</span>
@@ -48,17 +45,20 @@
                     <li class="weather-hero__data-item">
                         <span class="countryname">Россия</span>
                     </li>
-                    <li class="weather-hero__data-item">
+                    <li class="weather-hero__data-item" id="weatheimage">
                         <span class="weatheimage"></span>
                     </li>
                     <li class="weather-hero__data-item">
-                        <span class="temperaturecity">20</span>
+                        <span class="temperaturecity" id="temperaturecity">20 </span><span class="temperaturecity">&#8451;</span>
                     </li>
 
                 </ul>
                 <ul class="weather-hero__subdata-list">
                     <li class="weather-hero__subdata-item">
-                        <span class="windweather">Ветро</span>
+                        <span class="windweather">Нет данных</span>
+                    </li>
+                    <li class="weather-hero__subdata-item">
+                        <p class="windwspeed">Скорость ветра: <span id="windwspeed"></span> м.с.</p>
                     </li>
                 </ul>
             </div>
